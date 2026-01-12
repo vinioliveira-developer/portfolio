@@ -1,8 +1,7 @@
 /* HEADER */
 .cabecalho {
-  min-height: 100vh;
+  min-height: 70vh;
   display: flex;
-  flex-direction: column;
   overflow: hidden;
 }
 

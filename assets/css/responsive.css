@@ -12,3 +12,11 @@
     font-size: 1rem;
   }
 }
+
+@media (min-width: 768px) {
+  .sobre-mim-grid {
+    grid-template-columns: 1fr 1.5fr;
+    align-items: center;
+  }
+}
+

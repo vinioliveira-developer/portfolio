@@ -1,0 +1,90 @@
+/* MAIN */
+.conteudo-principal {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+
+  display: grid;
+  gap: 3rem;
+}
+
+/* SEÇÃO SOBRE MIM */
+
+.secao-sobre-mim {
+  display: grid;
+  gap: 1.25rem;
+  letter-spacing: 1px;
+}
+
+.subtitulo-secao {
+  color: var(--cor-texto-terciario);
+  font-size: 0.9rem;
+}
+
+.titulo-secao {
+  font-size: 1.5rem;
+  color: var(--cor-texto-destaque);
+}
+
+.sobre-mim-grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+/* IMAGEM SOBRE MIM */
+
+.sobre-mim-imagem img {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 16px;
+
+}
+
+/* TEXTO SOBRE MIM */
+
+.sobre-mim-texto p {
+  line-height: 1.7;
+  color: var(--cor-texto-principal);
+}
+
+.acoes-sobre-mim {
+  margin-top: 2rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.botao-contato {
+  background: var(--cor-destaque);
+  border: 1px solid var(--cor-destaque);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+
+}
+
+.botao-contato:hover {
+  background-color: transparent;
+  border: 1px solid var(--cor-destaque);
+}
+
+.links-sociais {
+  display: flex;
+  gap: 1rem;
+}
+
+.links-sociais a {
+  font-size: 1.4rem;
+  color: var(--texto-principal);
+  text-decoration: none;
+}
+
+.links-sociais a:hover {
+  color: var(--azul-primario);
+}
+
+

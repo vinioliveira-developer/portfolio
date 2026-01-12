@@ -1,0 +1,66 @@
+:root {
+  /* Fundos */
+  --cor-fundo-principal: #0b1220;
+  --cor-fundo-secundario: #0f1a2b;
+  --cor-navbar: #0a0f1c;
+
+  /* Textos */
+  --cor-texto-principal: #ffffff;
+  --cor-texto-secundario: #b0b8c4;
+  --cor-texto-terciario: #7f8a9a;
+  --font-medium: medium;
+  --font-principal: "Poppins", sans-serif;
+
+  /* Destaque */
+  --cor-destaque: #00b4d8;
+
+  /* Botões */
+  --cor-botao-primario: #00b4d8;
+  --cor-botao-primario-hover: #1ecbe1;
+  --cor-texto-botao-primario: #ffffff;
+
+  --cor-botao-secundario-borda: #00b4d8;
+  --cor-texto-botao-secundario: #00b4d8;
+
+  /* Cards */
+  --cor-card-fundo: #131f33;
+  --cor-card-borda: #1f2c44;
+  --cor-card-hover: #182844;
+
+  /* Ícones */
+  --cor-icone: #00b4d8;
+}
+
+
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CONFIGURAÇÕES GERAIS */
+body {
+  font-family: var(--font-principal);
+  line-height: 1.5;
+  background-color: var(--cor-fundo-principal);
+}
+
+
+
+/* BOTÕES */
+.acoes-rapidas {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--azul-primario);~
+
+  & :hover {
+    color: var(--azul-hover);
+  }
+}
+
+
+

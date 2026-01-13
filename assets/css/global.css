@@ -46,6 +46,7 @@ html, body {
   line-height: 1.5;
   background-color: var(--cor-fundo-principal);
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 
@@ -64,5 +65,8 @@ html, body {
   }
 }
 
+p {
+  text-align: center;
+}
 
 

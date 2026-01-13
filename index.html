@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
 
 
 </head>
@@ -29,7 +30,7 @@
           class="botao-tema" 
           id="botao-tema" 
           aria-label="Alterar tema">
-          🌙
+          <i class='bx  bx-sun'></i> 
         </button> <!--Mudar o botão de mudança de tema-->
       </div>
     </nav>
@@ -52,11 +53,48 @@
   </header>
 
   <main class="main">
-    <div class="conteudo-sobre-mim">
-      <div class="titulo-sobre itens-sobre">A</div>
-      <div class="imagem-sobre itens-sobre">B</div>
-      <div class="texto-sobre itens-sobre">C</div>
-      <div class="contato-sobre itens-sobre">D</div>
+
+    <div class="conteudo-sobre-mim" id="sobre">
+
+      <div class="titulo-sobre itens-sobre">
+        <span class="subtitulo-secao">Minhas Introdução</span>
+        <h2 class="titulo-secao">Sobre mim</h2>
+      </div>
+
+      <div class="imagem-sobre itens-sobre">
+        <div class="sobre-mim-imagem">
+          <img src="assets/img/Foto perfil.jpg" alt="Foto do desenvolvedor front-end">
+        </div>
+      </div>
+
+      <div class="texto-sobre itens-sobre coluna-direita">
+        <p>
+          Olá! Me chamo Marcos Vinícius e sou desenvolvedor Front-End em formação.
+          Tenho formação em Análise e Desenvolvimento de Sistemas e foco em HTML, CSS e JavaScript, aplicando esses conhecimentos em projetos práticos.
+          Busco minha primeira oportunidade como desenvolvedor, com foco em evolução constante e entrega de soluções bem feitas.
+          Estou disponível para contato e ficarei feliz em compartilhar informações adicionais.
+        </p>
+      </div>
+
+      <div class="contato-sobre itens-sobre coluna-direita">
+        <a href="#contato" class="botao-contato" >
+          contato
+        </a>
+      
+        <a href="https://www.linkedin.com/in/seu-perfil" target="_blank" class="icons-sobre">
+          <i class="bx bxl-linkedin"></i>
+        </a>
+
+        <a href="https://github.com/seu-usuario" target="_blank" class="icons-sobre">
+          <i class="bx bxl-github"></i>
+        </a>
+
+        <a href="https://www.instagram.com/seu-usuario" target="_blank" class="icons-sobre">
+          <i class="bx bxl-instagram"></i>
+        </a>
+
+        
+      </div>
     </div>
   </main>
 

@@ -1,38 +1,80 @@
 .main {
-  max-width: 1024px;
+  max-width: 1010px;
   margin: 0 auto;
   padding: 0 1.5rem;
 
   display: grid;
-  gap: 3rem;
+  gap: 5rem;
 
-  border: 2px solid red;
-  color: wheat;
+  color: var(--cor-texto-principal);
+}
+
+#sobre {
+  scroll-margin-top: 80px;
 }
 
 .conteudo-sobre-mim {
-  border: 2px solid blue;
-  display: grid;
-  gap: 0.5rem;
+
+  display: grid;  
+  gap: 1rem;
 }
 
 .itens-sobre {
-  display: flex;
-  justify-content: center;
+  text-align: center;
+  align-content: center;
+
+  .subtitulo-secao {
+    font-size: 0.8rem;
+    color: var(--cor-texto-secundario);
+  }
+
+  .titulo-secao {
+    font-size: 1.5rem;
+    font-weight: var(--font-medium);
+  }
 }
 
-.titulo-sobre {
-  border: 2px solid green;
-}
 
-.imagem-sobre {
-  border: 2px solid green;
+.imagem-sobre {  
+
+  .sobre-mim-imagem img {
+    border-radius: 10px;
+    max-width: 300px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    overflow: hidden;
+  }
 }
 
 .texto-sobre {
-  border: 2px solid green;
+  padding: 0 1.8rem;
+  font-size: 0.9rem;
 }
 
+
 .contato-sobre {
-  border: 2px solid green;
+  padding-bottom: 1rem;
+}
+
+.botao-contato {
+  background-color: var(--cor-botao-primario);
+  border: 1px solid var(--cor-botao-primario);
+  color: var(--cor-texto-botao-primario);
+  display: inline-block;
+  padding: 0.4rem;
+  border-radius: 4px;
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+}
+
+.icons-sobre {
+  text-decoration: none;
+  color: var(--cor-texto-botao-primario);
+  padding-left: 10px;
+  font-size: 1.5rem;
+
+  & :hover {
+    color: aqua;
+  }
 }

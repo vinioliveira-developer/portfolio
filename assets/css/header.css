@@ -7,6 +7,8 @@ header {
 .cabecalho {
   min-height: 70vh;
   display: flex;
+  max-width: 1010px;
+  margin: auto;
 }
 
 header::before {
@@ -26,6 +28,7 @@ header::before {
   transform: translateX(-50%);
   filter: blur(80px);
   opacity: 0.8;
+  pointer-events: none;
 }
 
 
@@ -62,6 +65,7 @@ header::before {
   background: none;
   border: none;
   cursor: pointer;
+  color: var(--cor-texto-botao-primario);
 }
 
 /* APRESENTAÇÃO */
@@ -102,24 +106,24 @@ header::before {
 }
 
 .botao-download {
-    background-color: var(--cor-botao-primario);
-    color: var(--cor-texto-principal);
-    border: 1px solid var(--cor-botao-primario);
-    font-weight: var(--font-medium);
+  background-color: var(--cor-botao-primario);
+  color: var(--cor-texto-principal);
+  border: 1px solid var(--cor-botao-primario);
+  font-weight: var(--font-medium);
 }
 
 .botao-download:hover {
-    background-color: transparent;
-    border: 1px solid var(--cor-botao-primario);
-    transition: 0.3s;
+  background-color: transparent;
+  border: 1px solid var(--cor-botao-primario);
+  transition: 0.3s;
 }
 
 .botao-sobre {
-    border: 1px solid var(--cor-botao-primario);
-    color: var(--cor-texto-principal);
-    font-weight: var(--font-medium);
+  border: 1px solid var(--cor-botao-primario);
+  color: var(--cor-texto-principal);
+  font-weight: var(--font-medium);
 }
 
 .botao-sobre:hover {
-    background-color: var(--cor-botao-primario);
+  background-color: var(--cor-botao-primario);
 }

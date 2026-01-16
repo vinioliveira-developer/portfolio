@@ -2,10 +2,6 @@
   max-width: 1010px;
   margin: 0 auto;
   padding: 0 1.5rem;
-
-  display: grid;
-  gap: 5rem;
-
   color: var(--cor-texto-principal);
 }
 
@@ -14,7 +10,6 @@
 }
 
 .conteudo-sobre-mim {
-
   display: grid;  
   gap: 1rem;
 }
@@ -22,7 +17,7 @@
 .itens-sobre {
   text-align: center;
   align-content: center;
-
+  
   .subtitulo-secao {
     font-size: 0.8rem;
     color: var(--cor-texto-secundario);
@@ -47,10 +42,11 @@
 }
 
 .texto-sobre {
-  padding: 0 1.8rem;
+  text-align: justify;
+  text-justify: inter-word;
   font-size: 0.9rem;
+  
 }
-
 
 .contato-sobre {
   padding-bottom: 1rem;

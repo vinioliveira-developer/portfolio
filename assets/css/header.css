@@ -1,46 +1,22 @@
-/* HEADER */
-header {
+#home {
   position: relative;
-  overflow: hidden;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), linear-gradient(to bottom, rgba(0, 0, 0, 0) 90%, #000 100%), url(/portfolio/assets/img/bg-mobile-main.webp) no-repeat center center / cover;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100dvh;
 }
-
-.cabecalho {
-  min-height: 70vh;
-  display: flex;
-  max-width: 1010px;
-  margin: auto;
-}
-
-header::before {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: 50%;
-  width: 600px;
-  height: 600px;
-
-  background: radial-gradient(
-    circle,
-    rgba(49, 69, 121, 0.4),
-    transparent 70%
-  );
-
-  transform: translateX(-50%);
-  filter: blur(80px);
-  opacity: 0.8;
-  pointer-events: none;
-}
-
 
 /* NAVBAR */
 .navbar {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 64px;
+  height: 56px;
   display: flex;
   align-items: center;
   background-color: var(--cor-navbar);
+  z-index: 1000;
 }
 
 .navbar-container {
@@ -55,13 +31,13 @@ header::before {
 }
 
 .logo-textual {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: var(--font-medium);
   color:var(--cor-texto-secundario);
 }
 
 .botao-tema {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   background: none;
   border: none;
   cursor: pointer;
@@ -80,22 +56,53 @@ header::before {
   text-align: center;  
 }
 
-.texto-introducao {
-  font-size: 1rem;
-  color: var(--cor-texto-secundario);
+.foto-wrapper {
+  position: relative;
+  width: 300px;
+  height: 380px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.forma-colorida {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    #a855f7,
+    #6366f1,
+    #22d3ee
+  );
+
+  border-radius: 50% 60% 45% 55% / 55% 45% 60% 50%;
+  z-index: 1;
+}
+
+.foto-perfil {
+  position: relative;
+  width: 85%;
+  height: auto;
+  z-index: 2;
+}
+
+
 .nome-principal {
-  font-size: 2rem;
+  font-size: 1.2rem;
   margin: 0.5rem 0;
   color: var(--cor-texto-principal);
   font-weight: var(--font-medium);
 }
 
 .cargo {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: normal;
-  color: var(--cor-texto-secundario);
+  color: var(--cor-texto-principal);
+}
+
+.paragrafo-apresentacao {
+  color: var(--cor-texto-principal);
 }
 
 .botao {

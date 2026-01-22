@@ -8,6 +8,7 @@
 
 .conteudo-main {
   grid-column: 2;
+  padding: 3rem 1rem;
 }
 
 /* APRESENTAÇÃO */
@@ -21,8 +22,7 @@
 
   gap: 1.5rem;
   text-align: center;
-  background-color: #0B1221;
-  padding: 3rem 1rem;  
+  background-color: #0B1221;  
 }
 
 .container-foto {
@@ -66,15 +66,8 @@
   color: var(--cor-texto-principal);
 }
 
-.destaque-sou {
-  color: var(--cor-texto-principal);
-  font-weight: bold;
-  text-shadow: 0 0 12px rgba(0, 229, 255, 0.226);
-}
-
 .nome-principal {
   font-size: 1.5rem;
-  margin: 0.5rem 0;
   color: var(--cor-texto-principal);
   font-weight: bolder;
   text-shadow: 0 0 12px rgba(0, 229, 255, 0.226);
@@ -82,9 +75,14 @@
 }
 
 .cargo {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: normal;
   color: var(--cor-texto-principal);
+}
+
+.efeito-texto {
+  font-weight: bolder;
+  text-shadow: 0 0 12px rgba(0, 229, 255, 0.226);
 }
 
 .paragrafo-apresentacao {
@@ -107,25 +105,17 @@
   text-shadow: 0 0 12px rgba(15, 201, 15, 0.226);
 }
 
-.botao-download:hover {
-  background-color: transparent;
-  border: 1px solid #2563EB;
-  transition: 0.3s;
-}
-
 .botao-sobre {
   border: 1px solid var(--cor-botao-primario);
   color: var(--cor-texto-principal);
   font-weight: var(--font-medium);
 }
 
-.botao-sobre:hover {
-  background-color: var(--cor-botao-primario);
-}
-
 #sobre {
   scroll-margin-top: 80px;
 }
+
+/*SECTION SOBRE-MIM*/
 
 .conteudo-sobre-mim {
   display: grid;  

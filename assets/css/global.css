@@ -1,25 +1,25 @@
 :root {
   /* Fundos */
-  --cor-fundo-principal: #0b1220;
-  --cor-fundo-secundario: #0f1a2b;
-  --cor-navbar: #0a0f1c;
+  --cor-fundo-principal: #0B1221;
+  --cor-fundo-secundario: #162238;
+  --cor-navbar: #0B1221;
 
   /* Textos */
   --cor-texto-principal: #ffffff;
   --cor-texto-secundario: #b0b8c4;
   --cor-texto-terciario: #7f8a9a;
-  --cor-texto-destaque: #1A98A6;
+  --cor-texto-destaque: #2563EB;
 
 ;
   --font-medium: medium;
   --font-principal: "Poppins", sans-serif;
 
   /* Destaque */
-  --cor-destaque: #00b4d8;
+  --cor-destaque: #2563EB;
 
   /* Botões */
-  --cor-botao-primario: #00b4d8;
-  --cor-botao-primario-hover: #1ecbe1;
+  --cor-botao-primario: #2563EB;
+  --cor-botao-primario-hover: #2563EB;
   --cor-texto-botao-primario: #ffffff;
 
   --cor-botao-secundario-borda: #00b4d8;
@@ -46,9 +46,16 @@
 html, body {
   font-family: var(--font-principal);
   line-height: 1.5;
-  background-color: var(--cor-fundo-principal);
   overflow-x: hidden;
   scroll-behavior: smooth;
+
+  min-height: 100vh;
+  width: 100%;
+
+  background:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0) 90%, #000 100%),
+    url("/assets/img/bg-mobile-main.webp") no-repeat center center / cover;
 }
 
 
@@ -60,7 +67,8 @@ html, body {
   gap: 1rem;
   text-decoration: none;
   cursor: pointer;
-  color: var(--azul-primario);~
+  color: var(--azul-primario);
+  justify-content: center;
 
   & :hover {
     color: var(--azul-hover);

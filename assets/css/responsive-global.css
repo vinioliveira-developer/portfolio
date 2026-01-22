@@ -1,0 +1,18 @@
+/* DESKTOP */
+@media (min-width: 768px) {
+  .nome-principal {
+    font-size: 3rem;
+  }
+
+  .cargo {
+    font-size: 1rem;
+  }
+
+  .botao {
+    font-size: 1rem;
+  }
+
+  
+
+}
+

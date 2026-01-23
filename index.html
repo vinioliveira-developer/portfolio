@@ -19,103 +19,86 @@
 <body>
   <!--Container para imagem de fundo da tela-->
   <div class="bg-fixed"></div>
+  <div class="page">    
+      <!-- HEADER -->
+    <header>
+      <!-- NAVBAR -->
+      <nav class="navbar">
+        <div class="navbar-container">
+          <span class="logo-textual">VINI.</span>
+          <button
+            class="botao-tema"
+            id="botao-tema"
+            aria-label="Alterar tema">
+            <i class='bx  bx-sun'></i>
+          </button> <!--Mudar o botão de mudança de tema-->
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <!-- APRESENTAÇÃO -->
+      <section class="apresentacao conteudo-main">
+        <div class="container-foto">
+          <div class="forma forma-1"></div>
+          <div class="forma forma-2"></div>
     
-    <!-- HEADER -->
-  <header>
-
-    <!-- NAVBAR -->
-    <nav class="navbar">
-      <div class="navbar-container">
-        <span class="logo-textual">VINI.</span>
-
-        <button 
-          class="botao-tema" 
-          id="botao-tema" 
-          aria-label="Alterar tema">
-          <i class='bx  bx-sun'></i> 
-        </button> <!--Mudar o botão de mudança de tema-->
-      </div>
-    </nav>
-  </header>
-
-  <main class="main">
-
-    <!-- APRESENTAÇÃO -->
-    <section class="apresentacao conteudo-main">
-
-      <div class="container-foto">
-        <div class="forma forma-1"></div>
-        <div class="forma forma-2"></div>
-        
-
-        <img 
-          src="assets/img/foto-perfil.png" 
-          alt="Foto de Vini"
-          class="foto-perfil"
-        >
-      </div>
-
-      <div class="container-texto-apresentacao">
-        <p class="bem-vindo">Olá, Sou</p>
-        <h1 class="nome-principal">Marcos Vinicius</h1>
-        <h2 class="cargo">Desenvolvedor <span class="efeito-texto">Frontend</span></h2>
-        <p class="paragrafo-apresentacao">Transformando ideias em soluções.</p>
-        <!-- BOTÕES -->
-        <div class="acoes-rapidas">
-          <a href="#" class="botao botao-download">Download CV</a>
-          <a href="#sobre" class="botao botao-sobre">Sobre mim</a>
+          <img
+            src="assets/img/foto-perfil.png"
+            alt="Foto de Vini"
+            class="foto-perfil"
+          >
         </div>
-      </div>
-    </section>
-
-  
-
-    <section class="conteudo-sobre-mim conteudo-main" id="sobre">
-
-      <div class="titulo-sobre itens-sobre">
-        <span class="subtitulo-secao">Minhas Introdução</span>
-        <h2 class="titulo-secao">Sobre mim</h2>
-      </div>
-
-      <div class="imagem-sobre itens-sobre">
-        <div class="sobre-mim-imagem">
-          <img src="assets/img/Foto perfil.jpg" alt="Foto do desenvolvedor front-end">
+        <div class="container-texto-apresentacao">
+          <p class="bem-vindo">Olá, Sou</p>
+          <h1 class="nome-principal">Marcos Vinicius</h1>
+          <h2 class="cargo">Desenvolvedor <span class="efeito-texto">Frontend</span></h2>
+          <p class="paragrafo-apresentacao">Transformando ideias em soluções.</p>
+          <!-- BOTÕES -->
+          <div class="acoes-rapidas">
+            <a href="#" class="botao botao-download">Download CV</a>
+            <a href="#sobre" class="botao botao-sobre">Sobre mim</a>
+          </div>
         </div>
-      </div>
-
-      <div class="texto-sobre itens-sobre coluna-direita">
-        <p>
-          Olá! Me chamo Marcos Vinícius e sou desenvolvedor Front-End em formação.
-          Tenho formação em Análise e Desenvolvimento de Sistemas e foco em HTML, CSS e JavaScript, aplicando esses conhecimentos em projetos práticos.
-          Busco minha primeira oportunidade como desenvolvedor, com foco em evolução constante e entrega de soluções bem feitas.
-          Estou disponível para contato e ficarei feliz em compartilhar informações adicionais.
-        </p>
-      </div>
-
-      <div class="contato-sobre itens-sobre coluna-direita">
-        <a href="#contato" class="botao-contato" >
-          contato
-        </a>
-      
-        <a href="https://www.linkedin.com/in/seu-perfil" target="_blank" class="icons-sobre">
-          <i class="bx bxl-linkedin"></i>
-        </a>
-
-        <a href="https://github.com/seu-usuario" target="_blank" class="icons-sobre">
-          <i class="bx bxl-github"></i>
-        </a>
-
-        <a href="https://www.instagram.com/seu-usuario" target="_blank" class="icons-sobre">
-          <i class="bx bxl-instagram"></i>
-        </a>
-
-        
-      </div>
-    </section>
-  </main>
-
-  
-
+      </section>
+    
+      <section class="conteudo-sobre-mim conteudo-main" id="sobre">
+        <div class="titulo-sobre itens-sobre">
+          <span class="subtitulo-secao">Minhas Introdução</span>
+          <h2 class="titulo-secao">Sobre mim</h2>
+        </div>
+        <div class="imagem-sobre itens-sobre">
+          <div class="sobre-mim-imagem">
+            <img src="assets/img/Foto perfil.jpg" alt="Foto do desenvolvedor front-end">
+          </div>
+        </div>
+        <div class="texto-sobre itens-sobre coluna-direita">
+          <p>
+            Olá! Me chamo Marcos Vinícius e sou desenvolvedor Front-End em formação.
+            Tenho formação em Análise e Desenvolvimento de Sistemas e foco em HTML, CSS e JavaScript, aplicando esses conhecimentos em projetos práticos.
+            Busco minha primeira oportunidade como desenvolvedor, com foco em evolução constante e entrega de soluções bem feitas.
+            Estou disponível para contato e ficarei feliz em compartilhar informações adicionais.
+          </p>
+        </div>
+        <div class="contato-sobre itens-sobre coluna-direita">
+          <a href="#contato" class="botao-contato" >
+            contato
+          </a>
+    
+          <a href="https://www.linkedin.com/in/seu-perfil" target="_blank" class="icons-sobre">
+            <i class="bx bxl-linkedin"></i>
+          </a>
+          <a href="https://github.com/seu-usuario" target="_blank" class="icons-sobre">
+            <i class="bx bxl-github"></i>
+          </a>
+          <a href="https://www.instagram.com/seu-usuario" target="_blank" class="icons-sobre">
+            <i class="bx bxl-instagram"></i>
+          </a>
+    
+        </div>
+      </section>
+    </main>
+    
+  </div>
 
 </body>
 </html>

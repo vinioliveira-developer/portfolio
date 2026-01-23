@@ -22,7 +22,7 @@
 
   gap: 1.5rem;
   text-align: center;
-  background-color: #0B1221;  
+  background-color: var(--cor-fundo-principal);  
 }
 
 .container-foto {
@@ -120,7 +120,7 @@
 .conteudo-sobre-mim {
   display: grid;  
   gap: 1rem;
-  background-color: #162238;
+  background-color: var(--cor-fundo-secundario);
 }
 
 .itens-sobre {

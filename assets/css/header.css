@@ -16,7 +16,7 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 2rem;
 
   display: flex;
   justify-content: space-between;
@@ -26,7 +26,7 @@
 .logo-textual {
   font-size: 1.5rem;
   font-weight: var(--font-medium);
-  color:var(--cor-texto-secundario);
+  color:var(--cor-texto-principal);
 }
 
 .botao-tema {
@@ -35,5 +35,7 @@
   border: none;
   cursor: pointer;
   color: var(--cor-texto-botao-primario);
+  font-weight: var(--font-medium);
+  padding: 0 1rem;
 }
 

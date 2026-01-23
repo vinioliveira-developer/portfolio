@@ -2,7 +2,7 @@
   /* Fundos */
   --cor-fundo-principal: #0B1221;
   --cor-fundo-secundario: #162238;
-  --cor-navbar: #0B1221;
+  --cor-navbar: #162238;
 
   /* Textos */
   --cor-texto-principal: #ffffff;
@@ -49,8 +49,19 @@ html {
 body {
   font-family: var(--font-principal);
   line-height: 1.5;
-  overflow-x: hidden;    
+  overflow: hidden;    
 }
+
+
+.page {
+  position: relative;
+  height: 100vh;
+  height: 100dvh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+
 
 .bg-fixed {
   position: fixed;

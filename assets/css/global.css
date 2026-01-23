@@ -62,7 +62,7 @@ body {
   background:
   linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
   linear-gradient(to bottom, rgba(0, 0, 0, 0) 90%, #000 100%),
-  url("/assets/img/bg-mobile-main.webp") no-repeat center center / cover;
+  url("../img/bg-mobile-main.webp") no-repeat center center / cover;
 }
 
 

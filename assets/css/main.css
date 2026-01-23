@@ -13,7 +13,7 @@
 
 /* APRESENTAÇÃO */
 .apresentacao {
-  min-height: 60dvh;
+  min-height: auto;
   margin-top: 3rem;
   display: flex;
   flex-direction: column;
@@ -22,7 +22,9 @@
 
   gap: 1.5rem;
   text-align: center;
-  background-color: var(--cor-fundo-principal);  
+  background-color: var(--cor-fundo-principal);
+  box-shadow: rgba(0, 0, 0, 0.993) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;  
+  border-radius: 1rem;
 }
 
 .container-foto {
@@ -121,6 +123,8 @@
   display: grid;  
   gap: 1rem;
   background-color: var(--cor-fundo-secundario);
+  box-shadow: rgba(0, 0, 0, 0.993) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;  
+  border-radius: 1rem;
 }
 
 .itens-sobre {
@@ -155,10 +159,6 @@
   text-justify: inter-word;
   font-size: 0.9rem;
   
-}
-
-.contato-sobre {
-  padding-bottom: 1rem;
 }
 
 .botao-contato {

@@ -1,104 +1,115 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio</title>
-    <link rel="stylesheet" href="assets/css/global.css">
-    <link rel="stylesheet" href="assets/css/header.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/footer.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio</title>
+  <link rel="stylesheet" href="assets/css/global.css">
+  <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
 
 
 </head>
-<body>
-  <!--Container para imagem de fundo da tela-->
-  <div class="bg-fixed"></div>
-  <div class="page">    
-      <!-- HEADER -->
-    <header>
-      <!-- NAVBAR -->
-      <nav class="navbar">
-        <div class="navbar-container">
-          <span class="logo-textual">VINI.</span>
-          <button
-            class="botao-tema"
-            id="botao-tema"
-            aria-label="Alterar tema">
-            <i class='bx  bx-sun'></i>
-          </button> <!--Mudar o botão de mudança de tema-->
-        </div>
-      </nav>
-    </header>
-    <main class="main">
-      <!-- APRESENTAÇÃO -->
-      <section class="apresentacao conteudo-main">
-        <div class="container-foto">
-          <div class="forma forma-1"></div>
-          <div class="forma forma-2"></div>
-    
+
+<body> 
+  <!-- HEADER -->
+  <header class="header">
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="container">
+        <span class="logo">VINI.</span>
+        <button
+          class="btn btn-icon"
+          id="botao-tema"
+          aria-label="Alterar tema">
+          <i class='bx bx-sun'></i>
+        </button> <!--Mudar o botão de mudança de tema-->
+      </div>
+    </nav>
+  </header>
+
+
+  <main>
+    <!-- APRESENTAÇÃO -->
+    <section class="section section--hero">
+      <div class="container hero-content">
+
+        <div class="hero-image">
+          <div class="shape shape-1"></div>
           <img
             src="assets/img/foto-perfil.png"
             alt="Foto de Vini"
-            class="foto-perfil"
+            class="profile-image"
           >
         </div>
-        <div class="container-texto-apresentacao">
-          <p class="bem-vindo">Olá, Sou</p>
-          <h1 class="nome-principal">Marcos Vinicius</h1>
-          <h2 class="cargo">Desenvolvedor <span class="efeito-texto">Frontend</span></h2>
-          <p class="paragrafo-apresentacao">Transformando ideias em soluções.</p>
+        <div class="hero-text">
+          <p class="text-muted">Olá, Sou</p>
+          <h1 class="title title--xl">Marcos Vinicius</h1>
+          <h2 class="subtitle">Desenvolvedor <span class="highlight">Frontend</span></h2>
+          <p class="text">Transformando ideias em soluções.</p>
           <!-- BOTÕES -->
-          <div class="acoes-rapidas">
-            <a href="#" class="botao botao-download">Download CV</a>
-            <a href="#sobre" class="botao botao-sobre">Sobre mim</a>
+          <div class="actions">
+            <a href="#" class="btn btn-primary">Download CV</a>
+            <a href="#sobre" class="btn btn-outline">Sobre mim</a>
           </div>
         </div>
-      </section>
-    
-      <section class="conteudo-sobre-mim conteudo-main" id="sobre">
-        <div class="titulo-sobre itens-sobre">
-          <span class="subtitulo-secao">Minhas Introdução</span>
-          <h2 class="titulo-secao">Sobre mim</h2>
-        </div>
-        <div class="imagem-sobre itens-sobre">
-          <div class="sobre-mim-imagem">
+      </div>
+    </section>
+
+    <section class="section section-about" id="sobre">
+      <div class="container">
+        
+        <header class="section-header">
+          <span class="subtitulo">Minhas Introdução</span>
+          <h2 class="title">Sobre mim</h2>
+        </header> 
+
+        
+        <div class="about-grid">
+
+          <div class="about-image card">
             <img src="assets/img/Foto perfil.jpg" alt="Foto do desenvolvedor front-end">
           </div>
+
+          <div class="about-text">
+            <p class="text">
+              Olá! Me chamo Marcos Vinícius e sou desenvolvedor Front-End em formação.
+              Tenho formação em Análise e Desenvolvimento de Sistemas e foco em HTML, CSS e JavaScript, aplicando esses conhecimentos em projetos práticos.
+              Busco minha primeira oportunidade como desenvolvedor, com foco em evolução constante e entrega de soluções bem feitas.
+              Estou disponível para contato e ficarei feliz em compartilhar informações adicionais.
+            </p>
+          </div>
+
+          <div class="about-actions">
+            <a href="#contato" class="btn btn-primary" >
+              contato
+            </a>
+
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/seu-perfil" target="_blank" class="icon-accent">
+                <i class="bx bxl-linkedin"></i>
+              </a>
+              <a href="https://github.com/seu-usuario" target="_blank" class="icon-accent">
+                <i class="bx bxl-github"></i>
+              </a>
+              <a href="https://www.instagram.com/seu-usuario" target="_blank" class="icon-accent">
+                <i class="bx bxl-instagram"></i>
+              </a>
+            </div>
+
+          </div>
+
         </div>
-        <div class="texto-sobre itens-sobre coluna-direita">
-          <p>
-            Olá! Me chamo Marcos Vinícius e sou desenvolvedor Front-End em formação.
-            Tenho formação em Análise e Desenvolvimento de Sistemas e foco em HTML, CSS e JavaScript, aplicando esses conhecimentos em projetos práticos.
-            Busco minha primeira oportunidade como desenvolvedor, com foco em evolução constante e entrega de soluções bem feitas.
-            Estou disponível para contato e ficarei feliz em compartilhar informações adicionais.
-          </p>
-        </div>
-        <div class="contato-sobre itens-sobre coluna-direita">
-          <a href="#contato" class="botao-contato" >
-            contato
-          </a>
-    
-          <a href="https://www.linkedin.com/in/seu-perfil" target="_blank" class="icons-sobre">
-            <i class="bx bxl-linkedin"></i>
-          </a>
-          <a href="https://github.com/seu-usuario" target="_blank" class="icons-sobre">
-            <i class="bx bxl-github"></i>
-          </a>
-          <a href="https://www.instagram.com/seu-usuario" target="_blank" class="icons-sobre">
-            <i class="bx bxl-instagram"></i>
-          </a>
-    
-        </div>
-      </section>
-    </main>
-    
-  </div>
+
+      </div>
+    </section>
+  </main>
 
 </body>
 </html>

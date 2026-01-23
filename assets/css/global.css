@@ -1,38 +1,41 @@
 :root {
-  /* Fundos */
-  --cor-fundo-principal: #0B1221;
-  --cor-fundo-secundario: #162238;
-  --cor-navbar: #162238;
+  /* FUNDOS */
+  --bg-body: #0F172A;
+  --bg-navbar: #162238;
+  --bg-hero: #162238;
+  --bg-section: #131f33;
+  --bg-card: #0B1220;
 
-  /* Textos */
-  --cor-texto-principal: #ffffff;
-  --cor-texto-secundario: #b0b8c4;
-  --cor-texto-terciario: #7f8a9a;
-  --cor-texto-destaque: #2563EB;
+  /* TEXTOS */
+  --text-primary: #FFFFFF;
+  --text-secondary: #B0B8C4;
+  --text-paragraph: #9CA3AF;
+  --text-muted: #7F8A9A;
 
-;
-  --font-medium: medium;
-  --font-principal: "Poppins", sans-serif;
+  /* ACENTO / DESTAQUE */
+  --accent: #2563EB;
+  --accent-hover: #3B82F6;
 
-  /* Destaque */
-  --cor-destaque: #2563EB;
+  /* BOTÕES */
+  --btn-primary-bg: var(--accent);
+  --btn-primary-text: #FFFFFF;
 
-  /* Botões */
-  --cor-botao-primario: #2563EB;
-  --cor-botao-primario-hover: #2563EB;
-  --cor-texto-botao-primario: #ffffff;
+  --btn-outline-border: #00B4D8;
+  --btn-outline-text: #00B4D8;
 
-  --cor-botao-secundario-borda: #00b4d8;
-  --cor-texto-botao-secundario: #00b4d8;
+  /* ÍCONES */
+  --icon-default: var(--text-secondary);
+  --icon-accent: var(--accent);
 
-  /* Cards */
-  --cor-card-fundo: #131f33;
-  --cor-card-borda: #1f2c44;
-  --cor-card-hover: #182844;
+  /* TIPOGRAFIA */
+  --font-main: "Poppins", sans-serif;
 
-  /* Ícones */
-  --cor-icone: #00b4d8;
+  /* UI */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
 }
+
 
 
 /* RESET BÁSICO */
@@ -47,53 +50,43 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: var(--font-principal);
+  font-family: var(--font-main);
   line-height: 1.5;
-  overflow: hidden;    
+  overflow-x: hidden; 
+  
+  background-color: var(--bg-body);
+  background-image: radial-gradient(
+    circle at top,
+    rgba(59, 130, 246, 0.12),
+    transparent 70%
+  );
+
+  color: #E5E7EB;
 }
 
-
-.page {
-  position: relative;
-  height: 100%;
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-
-
-
-.bg-fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-
-  z-index: -1;
-  will-change: transform;
-  transform: translateZ(0)
-  ;
-  background:
-  linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-  linear-gradient(to bottom, rgba(0, 0, 0, 0) 90%, #000 100%),
-  url("../img/bg-mobile-main.webp") no-repeat center center / cover;
-}
-
-
-
-/* BOTÕES */
-.acoes-rapidas {
-  margin-top: 1.5rem;
-  display: flex;
-  gap: 1rem;
-  text-decoration: none;
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-sm);
+  font-weight: 500;
   cursor: pointer;
-  color: var(--azul-primario);
-  justify-content: center;
+  text-decoration: none;
+}
 
-  & :hover {
-    color: var(--azul-hover);
-  }
+.btn-primary {
+  background-color: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+}
+
+.btn-outline {
+  border: 1px solid var(--btn-outline-border);
+  color: var(--btn-outline-text);
+  background: transparent;
+}
+
+.card {
+  background-color: var(--bg-card);
+  border-radius: var(--radius-md);
+  padding: 2rem;
 }
 
 

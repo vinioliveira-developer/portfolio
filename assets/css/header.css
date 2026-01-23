@@ -1,18 +1,24 @@
+.header {
+  position: relative;
+  z-index: 1000;
+}
 
-
-/* NAVBAR */
 .navbar {
   position: fixed;
   top: 0;
   width: 100%;
   height: 56px;
+
   display: flex;
   align-items: center;
-  background-color: var(--cor-navbar);
-  z-index: 1000;
+
+  background-color: var(--bg-navbar);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+
+  backdrop-filter: blur(8px);
 }
 
-.navbar-container {
+.navbar .container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -23,19 +29,23 @@
   align-items: center;
 }
 
-.logo-textual {
-  font-size: 1.5rem;
-  font-weight: var(--font-medium);
-  color:var(--cor-texto-principal);
+.logo {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: 1px;
 }
 
-.botao-tema {
-  font-size: 1.5rem;
+.btn-icon {
   background: none;
   border: none;
   cursor: pointer;
-  color: var(--cor-texto-botao-primario);
-  font-weight: var(--font-medium);
-  padding: 0 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.5rem;
+  color: var(--icon-default);
 }
 

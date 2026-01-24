@@ -5,26 +5,42 @@
   --bg-hero: #162238;
   --bg-section: #131f33;
   --bg-card: #0B1220;
+  --bg-image: linear-gradient(
+    to bottom,
+    var(--text-secondary),
+    #cfcfcf
+  );
 
   /* TEXTOS */
   --text-primary: #FFFFFF;
-  --text-secondary: #B0B8C4;
+  --text-secondary: #8ec0fd;
   --text-paragraph: #9CA3AF;
   --text-muted: #7F8A9A;
 
   /* ACENTO / DESTAQUE */
-  --accent: #2563EB;
+  --accent: #06AFDB;
   --accent-hover: #3B82F6;
+  --gradient-accent: linear-gradient(
+  135deg,
+  var(--accent),
+  var(--btn-outline-border),
+  var(--accent-hover));
+  --gradient-accent-text-animated: linear-gradient(
+  90deg,
+  #3B82F6,
+  #60A5FA,
+  #38BDF8);
+  --border: #9ca3afb7;
 
   /* BOTÕES */
   --btn-primary-bg: var(--accent);
   --btn-primary-text: #FFFFFF;
 
-  --btn-outline-border: #00B4D8;
-  --btn-outline-text: #00B4D8;
+  --btn-outline-border: var(--accent);
+  --btn-outline-text: var(--accent);
 
   /* ÍCONES */
-  --icon-default: var(--text-secondary);
+  --icon-default: #cfcfcf;
   --icon-accent: var(--accent);
 
   /* TIPOGRAFIA */
@@ -73,7 +89,7 @@ body {
 }
 
 .btn-primary {
-  background-color: var(--btn-primary-bg);
+  background: var(--btn-primary-bg);
   color: var(--btn-primary-text);
 }
 

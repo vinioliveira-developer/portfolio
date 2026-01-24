@@ -32,7 +32,7 @@
 .logo {
   font-size: 1.4rem;
   font-weight: 600;
-  color: var(--text-primary);
+  color: var(--icon-default);
   letter-spacing: 1px;
 }
 
@@ -47,5 +47,6 @@
 
   font-size: 1.5rem;
   color: var(--icon-default);
+  font-weight: 700;
 }
 

@@ -6,9 +6,8 @@
 }
 
 .section {
-  background-color: var(--bg-section);
   border-radius: var(--radius-lg);
-  padding: 3rem 1rem;
+  padding: 2rem 1rem;
   margin-top: 1rem;
   grid-column: 2;
 }
@@ -71,16 +70,24 @@
   background: var(--bg-image);
 }
 
-.title {
-  color: var(--text-primary);
+.title-section {
+  color: var(--accent);
+  font-size: 1.5rem;
+  
 }
 
 .title--xl {
   font-size: 1.8rem;
 }
 
-.subtitle {
+.subtitle-hero {
   color: var(--text-secondary);
+  font-size: 1.5rem;
+}
+
+.subtitle-section {
+  color: var(--text-muted);
+  font-size: 0.8rem;
 }
 
 .text {
@@ -137,6 +144,72 @@
   }
 }
 
+/* SKILLS */
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.skills-container {
+  background-color: var(--bg-section);
+  border-radius: var(--radius-lg);
+}
+
+.skills-content {
+  padding: 2rem;
+}
+
+.skills-box {
+  display: flex;
+  justify-content: center;
+  column-gap: 2.5rem;
+}
+
+.skills-group {
+  display: grid;
+  align-content: flex-start;
+  row-gap: 2rem;
+}
+
+.skills-data {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.ability{
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  align-items: flex-start;
+}
+
+.skills-title {
+  text-align: center;
+  font-weight: var(--font-weight-medium);
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-paragraph);
+}
+
+.bxs-badge-check {
+  font-size: 1rem;
+  color: var(--accent);
+}
+
+.skills-name {
+  margin: 0;
+  font-weight: var(--font-weight-medium);
+  line-height: 1;
+}
+
+.skills-level {
+  margin: 0;
+  font-weight: var(--font-weight-regular);
+  font-size: 0.7rem;
+  color: var(--text-muted);
+}
 
 
 

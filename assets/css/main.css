@@ -31,7 +31,6 @@
 
 .hero-image {
   order: -1;
-  justify-self: center;
   position: relative;
   width: 270px;
   aspect-ratio: 1 / 1;

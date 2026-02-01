@@ -12,8 +12,13 @@
     align-items: center;
     text-align: center;
   }
+  .hero-text {
+    order: 0;
+  }
 
-  
+  .hero-image {
+    order: 0;
+  }  
 }
 
 /* lg */

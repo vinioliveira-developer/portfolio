@@ -72,32 +72,7 @@
 
 /* xl */
 @media (min-width: 1280px) and (max-width: 1536px) {
-  .hero-content {
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    text-align: center;
-  }
-  .hero-text {
-    order: 0;
-  }
-
-  .hero-image {
-    order: 0;
-  }
-
-  .about-grid {
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    text-align: center;
-  }
   
-  .about-text {
-    max-width: 300px;
-  }
-
-  .container {
-    max-width: 800px;
-  }
 }
 
 

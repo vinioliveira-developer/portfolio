@@ -73,15 +73,21 @@
 }
 
 .menu-link {
-  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
   color: #aaa;
   padding: 10px;
   border-radius: 50%;
   transition: 0.3s;
+  text-decoration: none;
 }
 
 .menu-link i {
   font-weight: 600;
+  font-size: 1.2rem;
 }
 
 .menu-link.active {

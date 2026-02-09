@@ -60,7 +60,9 @@
   --space-2: 1rem;
   --space-3: 1.5rem;
   --space-4: 2rem;
-  --space-5: 3rem;
+  --space-5: 2.5rem;
+  --space-6: 3rem;
+  --navbar-height: 56px;
 }
 
 
@@ -109,11 +111,6 @@ body {
   border: 1px solid var(--btn-outline-border);
   color: var(--btn-outline-text);
   background: transparent;
-}
-
-.card {
-  background-color: var(--bg-card);
-  border-radius: var(--radius-md);
 }
 
 .container {

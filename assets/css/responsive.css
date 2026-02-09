@@ -11,6 +11,14 @@
 
 /* md */
 @media (min-width: 775px)  {
+  .main {
+    padding-top: var(--navbar-height-desktop)
+  }
+
+  #home {
+  scroll-margin-top: var(--navbar-height-desktop);
+}
+
   .hero-content {
     grid-template-columns: 1fr 1fr;
     align-items: center;

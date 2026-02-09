@@ -62,7 +62,8 @@
   --space-4: 2rem;
   --space-5: 2.5rem;
   --space-6: 3rem;
-  --navbar-height: 56px;
+  --navbar-height-mobile: 45px;
+  --navbar-height-desktop: 100px;
 }
 
 

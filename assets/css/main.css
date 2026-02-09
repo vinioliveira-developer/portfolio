@@ -1,5 +1,7 @@
 .main {
-  padding-top: 56px;
+  padding-top: var(--navbar-height);
+  display: block;
+  
 }
 
 .section {
@@ -106,7 +108,7 @@
 /* ABOUT */
 
 #about {
-  scroll-margin-top: 40px;
+  scroll-margin-top: var(--navbar-height);
 }
 
 .about-grid {
@@ -155,12 +157,13 @@
 .social-links {
   display: flex;
   place-content: center center;
-  gap:1.5rem;
-  
-  a {
-    line-height: 1  ;
-  }
+  gap: 1.5rem;
 }
+
+.social-links a {
+  line-height: 1;
+}
+
 
 /* SKILLS */
 
@@ -171,18 +174,23 @@
 }
 
 .skills-container {
-  background-color: var(--bg-section);
-  border-radius: var(--radius-lg);
+  width: 100%;
+  box-sizing: border-box;
 }
 
+
 .skills-content {
-  padding: 2rem;
+  background-color: var(--bg-section);
+  border-radius: var(--radius-lg);
+  padding: 2rem 0;
 }
 
 .skills-box {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  column-gap: 2.5rem;
+  column-gap: var(--space-5);
+  padding: 0 1.5rem;
+
 }
 
 .skills-group {
@@ -194,14 +202,17 @@
 
 .skills-data {
   display: flex;
+  align-items: flex-start; 
   gap: 0.75rem;
 }
+
 
 .ability{
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
   align-items: flex-start;
+ 
 }
 
 .skills-title {
@@ -219,6 +230,7 @@
 .skills-name {
   margin: 0;
   font-weight: var(--font-weight-medium);
+  font-size: 0.85rem;
   line-height: 1;
 }
 

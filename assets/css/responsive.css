@@ -3,14 +3,14 @@
 }*/
 
 /* sm */
-@media (min-width: 450px) and (max-width: 650px) {
+@media (min-width: 450px) {
   .container {
-    padding: 0 4rem;
+    max-width: 500px;
   }
 }
 
 /* md */
-@media (min-width: 651px) and (max-width: 851px) {
+@media (min-width: 775px)  {
   .hero-content {
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -37,10 +37,27 @@
   .container {
     max-width: 800px;
   }
+
+  .skills-content {
+    padding: 3rem 0;
+  }
+
+  .skills-box {
+    padding-left: 7rem;
+  }
+
+  .skills-title {
+    font-size: 1.2rem;
+    margin-bottom: var(--space-2);
+  }
+
+  .skills-name {
+    font-size: 1rem;
+  }
 }
 
 /* lg */
-@media (min-width: 1024px) and (max-width: 1280px) {
+@media (min-width: 1024px) {
   .hero-content {
     grid-template-columns: 1fr 1fr;
     align-items: center;

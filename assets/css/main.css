@@ -17,23 +17,23 @@
 
 .hero-content {
   display: grid;
-  gap: 2.5rem;
-  justify-items: center;
+  gap: 2rem;
+  justify-content: center;
   text-align: center;
 }
 
+
 .hero-text {
-  display: grid;
   order: 1;
 }
 
 .hero-image {
   order: -1;
   position: relative;
-  width: 240px;
+  max-width: 340px;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
-  padding: 3px;
+  padding: 1px;
 
   background: var(--gradient-accent);
   background-size: 300% 300%;
@@ -89,6 +89,11 @@
 .subtitle-hero {
   color: var(--text-secondary);
   font-size: 1.2rem;
+}
+
+.paragraph-hero {
+  margin-top: 0.2rem;
+  color: var(--text-paragraph)
 }
 
 .text {
@@ -179,13 +184,13 @@
   margin-top: 3rem;
 }
 
-.skills-container {
+.section-container {
   width: 100%;
   box-sizing: border-box;
 }
 
 
-.skills-content {
+.section-content {
   background-color: var(--bg-section);
   border-radius: var(--radius-lg);
   padding: 2rem 0;

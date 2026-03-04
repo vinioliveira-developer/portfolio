@@ -1,103 +1,90 @@
-/*.btn-primary:hover {
-  filter: brightness(1.1);
-}*/
 
 /* sm */
-@media (min-width: 450px) {
+@media (min-width: 640px) {
   .container {
-    max-width: 500px;
+    max-width: 600px;
   }
 }
 
 /* md */
-@media (min-width: 775px)  {
+@media (min-width: 768px) {
+
   .main {
-    padding-top: var(--navbar-height-desktop)
+    padding-top: var(--navbar-height-desktop);
   }
 
   #home {
-  scroll-margin-top: var(--navbar-height-desktop);
-}
+    scroll-margin-top: var(--navbar-height-desktop);
+  }
+
+  .container {
+    max-width: 750px;
+  }
 
   .hero-content {
     grid-template-columns: 1fr 1fr;
-    align-items: center;
+    place-items: center;
     text-align: center;
   }
+
   .hero-text {
     order: 0;
+  }
+
+  .title--xl {
+    font-size: 2.3rem;
+  }
+
+  .subtitle-hero {
+    font-size: 1.3rem;
+  }
+
+  .text {
+    font-size: 1rem;
   }
 
   .hero-image {
     order: 0;
   }
 
+  .actions {
+    justify-content: center;
+    
+  }
+
   .about-grid {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     text-align: center;
-  }
-  
-  .about-text {
-    max-width: 300px;
-  }
-
-  .container {
-    max-width: 800px;
-  }
-
-  .skills-content {
-    padding: 3rem 0;
-  }
-
-  .skills-box {
-    padding-left: 7rem;
-  }
-
-  .skills-title {
-    font-size: 1.2rem;
-    margin-bottom: var(--space-2);
-  }
-
-  .skills-name {
-    font-size: 1rem;
   }
 }
 
 /* lg */
 @media (min-width: 1024px) {
-  .hero-content {
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    text-align: center;
-  }
   .hero-text {
     order: 0;
   }
 
-  .hero-image {
-    order: 0;
-  }
-
-  .about-grid {
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .about-text {
-    max-width: 300px;
-  }
-
   .container {
-    max-width: 800px;
+    max-width: 960px;
   }
-   
+
+  .title--xl {
+    font-size: 3rem;
+  }
+
+  .subtitle-hero {
+    font-size: 1.8rem;
+  }
+
+  .text {
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    font-size: 1.2rem;
+  }
 }
 
-/* xl */
-@media (min-width: 1280px) and (max-width: 1536px) {
-  
-}
 
 

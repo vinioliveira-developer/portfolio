@@ -1,12 +1,12 @@
 
-/* sm */
+
 @media (min-width: 640px) {
   .container {
     max-width: 600px;
   }
 }
 
-/* md */
+
 @media (min-width: 768px) {
 
   .main {
@@ -59,7 +59,40 @@
   }
 }
 
-/* lg */
+
+@media (min-width: 850px) {
+
+  .container {
+    max-width: 960px;
+  }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .about-image {
+    max-width: 340px;
+    grid-column: 1;
+    grid-row: 1 / 3;
+  }
+
+  .about-text {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .about-actions {
+    grid-column: 2;
+    grid-row: 2;
+    justify-content: center;
+  }
+
+}
+
+
 @media (min-width: 1024px) {
   .hero-text {
     order: 0;
@@ -77,12 +110,9 @@
     font-size: 1.8rem;
   }
 
-  .text {
-    font-size: 1.2rem;
-  }
-
-  .btn {
-    font-size: 1.2rem;
+  .actions a {
+    font-size: 1.1rem;
+    padding: 1rem 1.2rem;
   }
 }
 

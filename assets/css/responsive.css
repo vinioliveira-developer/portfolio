@@ -57,6 +57,10 @@
     align-items: center;
     text-align: center;
   }
+
+  .works__container{
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 
@@ -90,6 +94,10 @@
     justify-content: center;
   }
 
+  .works__container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
 }
 
 
@@ -113,6 +121,10 @@
   .actions a {
     font-size: 1.1rem;
     padding: 1rem 1.2rem;
+  }
+
+  .works__container{
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 

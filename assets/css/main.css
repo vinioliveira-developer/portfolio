@@ -253,5 +253,122 @@
   color: var(--text-muted);
 }
 
+/* ===== WORKS ===== */
+
+.works{
+  padding: 3rem 1rem;
+}
+
+
+/* ===== FILTROS ===== */
+
+.works__filters{
+  display: flex;
+  justify-content: center;
+  gap: .7rem;
+  margin-bottom: 2rem;
+}
+
+.works__item{
+  padding: .45rem 1rem;
+  background: transparent;
+  border: 1px solid #334155;
+  color: var(--btn-primary-text);
+  border-radius: .4rem;
+  font-size: .85rem;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.works__item:hover {
+  border-color: var(--btn-primary-bg);
+}
+
+.active-work{
+  background: var(--btn-primary-bg);
+  border-color: var(--btn-primary-bg);
+  color: #fff;
+}
+
+
+/* ===== GRID DOS PROJETOS ===== */
+
+.works__container{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+
+/* ===== CARD ===== */
+
+.work__card{
+  background: var(--bg-section);
+  border-radius: .8rem;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,.08);
+  transition: .3s;
+}
+
+.work__card:hover{
+  transform: translateY(-5px);
+}
+
+
+/* ===== IMAGEM ===== */
+
+.work__img{
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: .5rem;
+  margin-bottom: .8rem;
+}
+
+
+/* ===== TEXTOS ===== */
+
+.work__title{
+  font-size: 1.1rem;
+  margin-bottom: .3rem;
+}
+
+.work__description{
+  font-size: .9rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+
+/* ===== BOTÕES ===== */
+
+.work__buttons{
+  display: flex;
+  gap: .6rem;
+}
+
+.work__button{
+  text-decoration: none;
+  font-size: .85rem;
+  padding: .4rem .8rem;
+  border-radius: .3rem;
+  background: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+  transition: .3s;
+  cursor: pointer;
+}
+
+.work__button.github{
+  background: transparent;
+  color: var(--btn-outline-text);
+  border: 1px solid var(--btn-outline-border);
+}
+
+/* CLASSE PARA ESCONDER */
+
+.hide{
+  display: none;
+}
 
 

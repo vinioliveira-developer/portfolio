@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio</title>
+  <link rel="icon" href="./assets/img/M.V.png">
   <link rel="stylesheet" href="assets/css/global.css">
   <link rel="stylesheet" href="assets/css/header.css">
   <link rel="stylesheet" href="assets/css/main.css">
@@ -217,7 +218,7 @@
 
         <div class="section-container grid">
           <div class="section-content">
-            <h3 class="skills-title">Design (conhecimento complementar)</h3>
+            <h3 class="skills-title">Design <br>(conhecimento complementar)</h3>
             <div class="skills-box">
               <div class="skills-group">
                 <div class="skills-data">
@@ -249,134 +250,86 @@
       </div>
     </section>
 
-    <section id="projects" class="section">
-      <div class="container">
-        <header class="section-header">
-          <span class="subtitle-section">Minhas habilidades</span>
-          <h2 class="title-section">Minha Experiência</h2>
-        </header>
-        
-        <div class="section-container grid">
-          <div class="section-content">
-            <h3 class="skills-title">Front-end</h3>
-            <div class="skills-box">
-              <div class="skills-group">
-                <div class="skills-data">
-                  <i class="bx bxs-badge-check"></i>
-                  <div class="ability">
-                    <h3 class="skills-name">HTML</h3>          
-                  </div>
-                </div>
-                <div class="skills-data">
-                  <i class="bx bxs-badge-check"></i>
-                  <div class="ability">
-                    <h3 class="skills-name">CSS</h3>                    
-                  </div>
-                </div>
-                <div class="skills-data">
-                  <i class="bx bxs-badge-check"></i>
-                  <div class="ability">
-                    <h3 class="skills-name">JavaScript</h3>      
-                  </div>
-                </div>
-              </div>
-              <div class="skills-group">
-                <div class="skills-data">
-                  <i class="bx bxs-badge-check"></i>
-                  <div class="ability">
-                    <h3 class="skills-name">Manipulação do DOM</h3>      
-                  </div>
-                </div>
-                <div class="skills-data">
-                  <i class="bx bxs-badge-check"></i>
-                  <div class="ability">
-                    <h3 class="skills-name">Responsividade</h3>      
-                  </div>
-                </div>
-              </div>              
-            </div>  
-          </div>
-        </div>
-        <div class="section-container grid">
-          <div class="section-content">
-            <h3 class="skills-title">Ferramentas</h3>
-            <div class="skills-box">
-              <div class="skills-group">
-                <div class="skills-data">
-                  <i class="bx bxs-badge-check"></i>
-                  <div class="ability">
-                    <h3 class="skills-name">Git</h3>                    
-                  </div>
-                </div>
-                <div class="skills-data">
-                  <i class="bx bxs-badge-check"></i>
-                  <div class="ability">
-                    <h3 class="skills-name">GitHub</h3>                    
-                  </div>
-                </div>
-              </div>
-              <div class="skills-group">
-                <div class="skills-data">
-                  <i class="bx bxs-badge-check"></i>
-                  <div class="ability">
-                    <h3 class="skills-name">Figma</h3>                    
-                  </div>
-                </div>
-              </div>
-            </div>  
-          </div>
-        </div>
-
-        <div class="section-container grid">
-          <div class="section-content">
-            <h3 class="skills-title">Metodologias</h3>
-            <div class="skills-box">
-              <div class="skills-group">
-                <div class="skills-data">
-                  <i class="bx bxs-badge-check"></i>
-                  <div class="ability">
-                    <h3 class="skills-name">Ferramentas Kanban</h3>            
-                  </div>
-                </div>
-                <div class="skills-data">
-                  <i class="bx bxs-badge-check"></i>
-                  <div class="ability">
-                    <h3 class="skills-name">Trabalho em equipe</h3>
-                  </div>
-                </div>
-              </div>
-            </div>  
-          </div>
-        </div>
-
-        <div class="section-container grid">
-          <div class="section-content">
-            <h3 class="skills-title">Estudando atualmente</h3>
-            <div class="skills-box">
-              <div class="skills-group">
-                <div class="skills-data">
-                  <i class="bx bxs-badge-check"></i>
-                  <div class="ability">
-                    <h3 class="skills-name">React</h3>            
-                  </div>
-                </div>
-                <div class="skills-data">
-                  <i class="bx bxs-badge-check"></i>
-                  <div class="ability">
-                    <h3 class="skills-name">Boas práticas de JavaScript</h3>
-                  </div>
-                </div>
-              </div>
-            </div>  
-          </div>
-        </div>       
+    <section id="works" class="works section">
+      <header class="section-header">
+        <span class="subtitle-section">Meus Projetos</span>
+        <h2 class="title-section">Trabalhos recentes</h2>
+      </header>
+      
+      <div class="works__filters">
+        <button class="works__item active-work"   data-filter="all">
+          Todos
+        </button>
+        <button class="works__item" data-filter="web">
+          Web
+        </button>
+        <button class="works__item" data-filter="mobile">
+          Mobile
+        </button>
       </div>
+        
+      <div class="works__container">
+
+        <!-- PROJETO 1 -->
+        <div class="work__card mobile">
+
+          <img src="./assets/img/projetos/catalogo-tintas-mobile.jpg" alt="Catálogo de Tintas" class="work__img">
+
+          <h3 class="work__title">Catálogo de Tintas</h3>
+
+          <p class="work__description">
+            Aplicação mobile para visualização de tintas com foco em experiência do usuário.
+          </p>
+
+          <div class="work__buttons">
+
+            <a href="https://catalogo-de-tintas.vercel.app/" target="_self" class="work__button">
+              Ver Projeto
+            </a>
+
+            <a href="https://github.com/vinioliveira-developer/catalogo-de-tintas" target="_self" class="work__button github">
+              GitHub
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- PROJETO 2 -->
+        <div class="work__card web mobile">
+
+          <img src="assets/img/projeto3.jpg" alt="Portfólio" class="work__img">
+
+          <h3 class="work__title">Portfólio Developer</h3>
+
+          <p class="work__description">
+            Portfólio pessoal desenvolvido para apresentar projetos e habilidades.
+          </p>
+
+          <div class="work__buttons">
+
+            <a href="#" class="work__button">
+              Ver Projeto
+            </a>
+
+            <a href="#" class="work__button github">
+              GitHub
+            </a>
+
+          </div>
+
+        </div>
+      </div>  
+               
+      
     </section>
+    
     <section id="contact" class="section"></section>
   </main>
 
   <footer class="section"></footer>
 
-  <script src="assets/js/script.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

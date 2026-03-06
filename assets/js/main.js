@@ -1,8 +1,53 @@
 /* ================= MENU ACTIVE ================= */
 
-const sections = document.querySelectorAll('section');
-const menuLink = document.querySelectorAll('.menu-link');
+const sections = document.querySelectorAll("section");
+const menuLinks = document.querySelectorAll(".menu-link");
 
+let clicking = false;
+
+// SCROLL
+window.addEventListener("scroll", () => {
+
+  if (clicking) return;
+
+  let current = "";
+
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - 150;
+    const sectionHeight = section.offsetHeight;
+
+    if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  menuLinks.forEach(link => {
+    link.classList.remove("active");
+
+    if (link.getAttribute("href") === `#${current}`) {
+      link.classList.add("active");
+    }
+  });
+
+});
+
+// CLICK
+menuLinks.forEach(link => {
+
+  link.addEventListener("click", () => {
+
+    clicking = true;
+
+    menuLinks.forEach(l => l.classList.remove("active"));
+    link.classList.add("active");
+
+    setTimeout(() => {
+      clicking = false;
+    }, 600);
+
+  });
+
+});
 
 
 
@@ -42,3 +87,7 @@ filterButtons.forEach(button => {
   });
 
 });
+
+/* ================= FOOTER DATE ================= */
+
+document.getElementById("year").textContent = new Date().getFullYear();

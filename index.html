@@ -3,19 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio</title>
+
+  <title>Marcos Vinicius Oliveira | Desenvolvedor Front-End</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Portfólio de Marcos Vinicius Oliveira, Desenvolvedor Front-End especializado em HTML, CSS e JavaScript. Veja projetos, experiências e contato profissional.">
+  <meta name="keywords" content="desenvolvedor front-end, portfólio front-end, HTML CSS JavaScript, desenvolvedor web júnior">
+  <meta name="author" content="Marcos Vinicius Oliveira">
+  <link rel="canonical" href="https://portfolio-eta-fawn-59.vercel.app/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Vinicius Oliveira | Desenvolvedor Front-End">
+  <meta property="og:description" content="Portfólio com projetos em HTML, CSS e JavaScript.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://portfolio-eta-fawn-59.vercel.app">
+  <meta property="og:image" content="https://portfolio-eta-fawn-59.vercel.app/assets/img/preview.png">
+
   <link rel="icon" href="./assets/img/M.V.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/variable.css">
   <link rel="stylesheet" href="assets/css/global.css">
   <link rel="stylesheet" href="assets/css/header.css">
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/footer.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
-  <link rel="stylesheet" href="assets/css/variable.css">
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet"> <!--boxicons-->
 
+  <!-- Icons -->
+  <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+
+  <!-- Structured Data (SEO para buscadores) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Marcos Vinicius Oliveira",
+    "url": "https://portfolio-eta-fawn-59.vercel.app",
+    "jobTitle": "Front-End Developer",
+    "knowsAbout": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Front-End Development"
+    ],
+    "sameAs": [
+      "https://github.com/SEU-GITHUB",
+      "https://www.linkedin.com/in/SEU-LINKEDIN"
+    ]
+  }
+  </script>
 
 </head>
 
@@ -49,7 +90,7 @@
           <i class="bx bx-code-alt"></i>
         </a>
 
-        <a href="#projects" class="menu-link">
+        <a href="#works" class="menu-link">
           <i class="bx bx-briefcase"></i>
         </a>
 
@@ -140,12 +181,12 @@
       <div class="container">
         <header class="section-header">
           <span class="subtitle-section">Minhas habilidades</span>
-          <h2 class="title-section">Minha Experiência</h2>
+          <h2 class="title-section">Skills</h2>
         </header>
         
         <div class="section-container grid">
           <div class="section-content">
-            <h3 class="skills-title">Front-end</h3>
+            <h3 class="skills-title">Habilidades Profissionais</h3>
             <div class="skills-box">
               <div class="skills-group">
                 <div class="skills-data">
@@ -183,7 +224,55 @@
               </div>              
             </div>  
           </div>
-        </div>     
+        </div>
+        
+        <div class="section-container grid">
+          <div class="section-content">
+            <h3 class="skills-title">Habilidades Pessoais</h3>
+            <div class="skills-box">
+              <div class="skills-group">
+                <div class="skills-data">
+                  <i class="bx bxs-badge-check"></i>
+                  <div class="ability">
+                    <h3 class="skills-name">Comunicação</h3>          
+                  </div>
+                </div>
+                <div class="skills-data">
+                  <i class="bx bxs-badge-check"></i>
+                  <div class="ability">
+                    <h3 class="skills-name">Liderança</h3>                    
+                  </div>
+                </div>
+                <div class="skills-data">
+                  <i class="bx bxs-badge-check"></i>
+                  <div class="ability">
+                    <h3 class="skills-name">Trabalho em equipe</h3>      
+                  </div>
+                </div>
+              </div>
+              <div class="skills-group">
+                <div class="skills-data">
+                  <i class="bx bxs-badge-check"></i>
+                  <div class="ability">
+                    <h3 class="skills-name">Flexibilidade</h3>      
+                  </div>
+                </div>
+                <div class="skills-data">
+                  <i class="bx bxs-badge-check"></i>
+                  <div class="ability">
+                    <h3 class="skills-name">Organização</h3>      
+                  </div>
+                </div>
+                <div class="skills-data">
+                  <i class="bx bxs-badge-check"></i>
+                  <div class="ability">
+                    <h3 class="skills-name">Resolução de Problemas</h3>      
+                  </div>
+                </div>
+              </div>              
+            </div>  
+          </div>
+        </div> 
 
         <div class="section-container grid">
           <div class="section-content">
@@ -250,6 +339,8 @@
       </div>
     </section>
 
+    <!-- WORKS SECTION -->
+
     <section id="works" class="works section">
       <header class="section-header">
         <span class="subtitle-section">Meus Projetos</span>
@@ -268,17 +359,17 @@
         </button>
       </div>
         
-      <div class="works__container">
+      <div class="works__container container">
 
         <!-- PROJETO 1 -->
         <div class="work__card mobile">
 
-          <img src="./assets/img/projetos/catalogo-tintas-mobile.jpg" alt="Catálogo de Tintas" class="work__img">
+          <img src="./assets/img/projetos/mobile-catalog.jpg" alt="Catálogo de Tintas" class="work__img">
 
           <h3 class="work__title">Catálogo de Tintas</h3>
 
           <p class="work__description">
-            Aplicação mobile para visualização de tintas com foco em experiência do usuário.
+            Aplicação mobile para visualização de tintas com foco em experiência do usuário. Utizando HTML, CSS & JavaScript puro.
           </p>
 
           <div class="work__buttons">
@@ -299,21 +390,21 @@
         <!-- PROJETO 2 -->
         <div class="work__card web mobile">
 
-          <img src="assets/img/projeto3.jpg" alt="Portfólio" class="work__img">
+          <img src="assets/img/projetos/web-mobile-potfolio.jpg" alt="Portfólio" class="work__img">
 
           <h3 class="work__title">Portfólio Developer</h3>
 
           <p class="work__description">
-            Portfólio pessoal desenvolvido para apresentar projetos e habilidades.
+            Portfólio pessoal desenvolvido para apresentar projetos e habilidades. Utizando HTML, CSS & JavaScript puro.
           </p>
 
           <div class="work__buttons">
 
-            <a href="#" class="work__button">
+            <a href="https://portfolio-eta-fawn-59.vercel.app/" target="_self" class="work__button">
               Ver Projeto
             </a>
 
-            <a href="#" class="work__button github">
+            <a href="https://github.com/vinioliveira-developer/portfolio" target="_self" class="work__button github">
               GitHub
             </a>
 
@@ -325,10 +416,51 @@
       
     </section>
     
-    <section id="contact" class="section"></section>
+    <section id="contact" class="section">
+      <header class="section-header">
+        <span class="subtitle-section">Fale comigo</span>
+        <h2 class="title-section">Contato</h2>
+      </header>
+
+      <div class="contact-container">
+
+        <div class="contact-card">
+          <i class='bx bx-mail-send contact-icon'></i>
+          <h3>Email</h3>
+          <span>mvinicius.developer@gmail.com</span>
+          <a href="mailto:mvinicius.developer@gmail.com?subject=Contato%20do%20Portfólio&body=Olá%20Vinicius,%20vi%20seu%20portfólio" class="contact-button">
+            Contato <i class='bx bx-right-arrow-alt'></i>
+          </a>
+        </div>
+
+        <div class="contact-card">
+          <i class='bx bxl-whatsapp contact-icon'></i>
+          <h3>Whatsapp</h3>
+          <span>(11) 91945-4217</span>
+          <a href="https://wa.me/5511919454217" target="_blank" class="contact-button">
+            Contato <i class='bx bx-right-arrow-alt'></i>
+          </a>
+        </div>
+
+        <div class="contact-card">
+          <i class='bx bxl-linkedin contact-icon'></i>
+          <h3>Linkedin</h3>
+          <span>Marcos Vinicius</span>
+          <a href="https://www.linkedin.com/in/mvinicius-developer" target="_blank" class="contact-button">
+            Contato <i class='bx bx-right-arrow-alt'></i>
+          </a>
+        </div>
+
+      </div>
+    </section>
   </main>
 
-  <footer class="section"></footer>
+  <footer class="footer">
+    <span>&copy; <span id="year"></span> Marcos Vinicius Developer</span>
+    <p class="footer-stack">
+      Built with HTML, CSS & JavaScript
+    </p>
+  </footer>
 
   <script src="assets/js/main.js"></script>
 </body>

@@ -2,9 +2,7 @@
   /* FUNDOS */
   --bg-body: #0F172A;
   --bg-navbar: #162238;
-  --bg-hero: #162238;
   --bg-section: #131f33;
-  --bg-card: #0B1220;
   --bg-image: linear-gradient(
     to bottom,
     var(--text-secondary),
@@ -30,7 +28,7 @@
   #3B82F6,
   #60A5FA,
   #38BDF8);
-  --border: #9ca3afb7;
+  
 
   /* BOTÕES */
   --btn-primary-bg: var(--accent);
@@ -48,15 +46,12 @@
   --font-weight-regular: 400;
   --font-weight-medium: 500;
   --font-weight-bold: 700;
-  --font-weight-black: 900;
 
   /* UI */
   --radius-sm: 8px;
-  --radius-md: 16px;
   --radius-lg: 24px;
 
   /* SPACE */
-  --space-1: 0.5rem;
   --space-2: 1rem;
   --space-3: 1.5rem;
   --space-4: 2rem;
@@ -64,4 +59,26 @@
   --space-6: 3rem;
   --navbar-height-mobile: 45px;
   --navbar-height-desktop: 100px;
+}
+
+body.light-theme {
+
+  /* FUNDOS */
+  --bg-body: #F8FAFC;
+  --bg-navbar: #FFFFFF;
+  --bg-hero: #F1F5F9;
+  --bg-section: #FFFFFF;
+  --bg-card: #F1F5F9;
+
+  /* TEXTOS */
+  --text-primary: #0F172A;
+  --text-secondary: #2563EB;
+  --text-paragraph: #475569;
+  --text-muted: #64748B;
+
+  /* ÍCONES */
+  --icon-default: #334155;
+
+  /* BORDER */
+  --border: #E2E8F0;
 }

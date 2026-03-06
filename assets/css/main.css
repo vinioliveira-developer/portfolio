@@ -179,72 +179,41 @@
   scroll-margin-top: var(--navbar-height-mobile);
 }
 
-.grid {
+.skills-grid {
   display: grid;
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-5);
   margin-top: 3rem;
 }
 
-.section-container {
+.skills-card {
   width: 100%;
-  box-sizing: border-box;
-}
-
-
-.section-content {
-  background-color: var(--bg-section);
+  background: var(--bg-section);
   border-radius: var(--radius-lg);
-  padding: 2rem 0;
+  padding: 2rem;
 }
 
-.skills-box {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  column-gap: var(--space-5);
-  padding: 0 1.5rem;
-
-}
-
-.skills-group {
-  display: grid;
-  align-content: flex-start;
-  row-gap: 1.3rem;
-  margin-top: var(--space-3);
-}
-
-.skills-data {
-  display: flex;
-  align-items: flex-start; 
-  gap: 0.75rem;
-}
-
-
-.ability{
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-  align-items: flex-start;
- 
-}
-
-.skills-title {
+.skills-card h3 {
   text-align: center;
-  font-weight: var(--font-weight-medium);
+  margin-bottom: 1.5rem;
   font-size: 1rem;
   color: var(--text-paragraph);
 }
 
-.bxs-badge-check {
-  font-size: 1rem;
-  color: var(--accent);
+.skills-card ul {
+  display: grid;
+  gap: 1rem;
 }
 
-.skills-name {
-  max-width: 160px;
-  margin: 0;
-  font-weight: var(--font-weight-medium);
-  font-size: 0.85rem;
-  line-height: 1.6;
+.skills-card li {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  font-size: .9rem;
+}
+
+.skills-card i {
+  color: var(--accent);
 }
 
 /* ===== WORKS ===== */
@@ -267,7 +236,7 @@
   padding: .45rem 1rem;
   background: transparent;
   border: 1px solid #334155;
-  color: var(--btn-primary-text);
+  color: var(--text-primary);
   border-radius: .4rem;
   font-size: .85rem;
   transition: .3s;
@@ -281,7 +250,7 @@
 .active-work{
   background: var(--btn-primary-bg);
   border-color: var(--btn-primary-bg);
-  color: #fff;
+  color: var(--btn-primary-text);
 }
 
 
@@ -385,6 +354,7 @@
   border-radius: 1rem;
   text-align: center;
   transition: 0.3s;
+  overflow-wrap: break-word;
 }
 
 .contact-card:hover {

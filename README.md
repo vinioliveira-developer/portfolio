@@ -70,7 +70,7 @@ Você pode acessar o projeto online aqui:
 <br>
 
 <a href="mailto:mvinicius.developer@gmail.com">
-  📧 Email
+  📧 Email: mvinicius.developer@gmail.com
 </a>
 
 </p>

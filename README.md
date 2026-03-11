@@ -57,7 +57,7 @@ Você pode acessar o projeto online aqui:
 
 <p align="left">
 
-<a href="www.linkedin.com/in/mvinicius-developer" target="_blank">
+<a href="https://www.linkedin.com/in/mvinicius-developer/" target="_blank">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="20"/> LinkedIn
 </a>
 
@@ -69,7 +69,7 @@ Você pode acessar o projeto online aqui:
 
 <br>
 
-<a href="mvinicius.developer@gmail.com">
+<a href="mailto:mvinicius.developer@gmail.com">
   📧 Email
 </a>
 

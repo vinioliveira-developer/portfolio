@@ -4,6 +4,7 @@
 
 #home {
   scroll-margin-top: var(--navbar-height-mobile);
+  
 }
 
 .section {
@@ -93,7 +94,7 @@
 
 .paragraph-hero {
   margin-top: 0.2rem;
-  color: var(--text-paragraph)
+  color: var(--text-paragraph);
 }
 
 .text {
@@ -265,7 +266,7 @@
 
 /* ===== CARD ===== */
 
-.work__card{
+.works__card{
   background: var(--bg-section);
   border-radius: .8rem;
   padding: 1rem;
@@ -273,14 +274,14 @@
   transition: .3s;
 }
 
-.work__card:hover{
+.works__card:hover{
   transform: translateY(-5px);
 }
 
 
 /* ===== IMAGEM ===== */
 
-.work__img{
+.works__img{
   width: 100%;
   height: 250px;
   object-fit: cover;
@@ -291,13 +292,13 @@
 
 /* ===== TEXTOS ===== */
 
-.work__title{
+.works__title{
   font-size: 1rem;
   margin-bottom: .3rem;
   font-weight: var(--font-weight-regular);
 }
 
-.work__description{
+.works__description{
   font-size: .8rem;
   color: var(--text-muted);
   margin-bottom: 1rem;
@@ -307,12 +308,12 @@
 
 /* ===== BOTÕES ===== */
 
-.work__buttons{
+.works__buttons{
   display: flex;
   gap: .6rem;
 }
 
-.work__button{
+.works__button{
   text-decoration: none;
   font-size: .80rem;
   padding: .4rem .8rem;
@@ -323,7 +324,7 @@
   cursor: pointer;
 }
 
-.work__button.github{
+.works__button.github{
   background: transparent;
   color: var(--btn-outline-text);
   border: 1px solid var(--btn-outline-border);

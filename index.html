@@ -18,7 +18,7 @@
   <meta property="og:description" content="Portfólio com projetos em HTML, CSS e JavaScript.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://portfolio-eta-fawn-59.vercel.app">
-  <meta property="og:image" content="https://portfolio-eta-fawn-59.vercel.app/assets/img/preview.png">
+  <meta property="og:image" content="https://portfolio-eta-fawn-59.vercel.app/assets/img/preview.webp">
 
   <!-- FAVICON -->
   <link rel="icon" type="image/png" href="/assets/img/favicon/favicon-96x96.png" sizes="96x96" />
@@ -35,12 +35,12 @@
   <link rel="stylesheet" href="assets/css/footer.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
 
-  <!-- Google Fonts -->
+  <!-- GOOGLE FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Icons -->
+  <!-- ICONS -->
   <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
 
   <!-- Structured Data (SEO para buscadores) -->
@@ -79,33 +79,33 @@
           id="botao-tema"
           aria-label="Alterar tema">
           <i class='bx bx-sun'></i>
-        </button> <!--Mudar o botão de mudança de tema-->
+        </button>
       </div>
     </div>
-    <!--menu-->
-      <nav class="buttom-menu">
-        <a href="#home" class="menu-link active">
-          <i class="bx bx-home"></i>
+
+    <!--MENU-->
+      <nav class="bottom-menu">
+        <a href="#home" class="menu-link active" aria-label="home">
+          <i class="bx bx-home" aria-hidden="true"></i>
         </a>
 
-        <a href="#about" class="menu-link">
-          <i class="bx bx-user"></i>
+        <a href="#about" class="menu-link" aria-label="about">
+          <i class="bx bx-user" aria-hidden="true"></i>
         </a>
 
-        <a href="#skills" class="menu-link">
-          <i class="bx bx-code-alt"></i>
+        <a href="#skills" class="menu-link" aria-label="skills">
+          <i class="bx bx-code-alt" aria-hidden="true"></i>
         </a>
 
-        <a href="#works" class="menu-link">
-          <i class="bx bx-briefcase"></i>
+        <a href="#works" class="menu-link" aria-label="works">
+          <i class="bx bx-briefcase" aria-hidden="true"></i>
         </a>
 
-        <a href="#contact" class="menu-link">
-          <i class="bx bx-message-square"></i>
+        <a href="#contact" class="menu-link" aria-label="contact">
+          <i class="bx bx-message-square" aria-hidden="true"></i>
         </a>
       </nav>
   </header>
-
 
   <main class="main">
     <!-- APRESENTAÇÃO -->
@@ -117,18 +117,19 @@
           <h1 class="title title--xl">Marcos Vinicius</h1>
           <h2 class="subtitle-hero"><span>Desenvolvedor Frontend</span></h2>
           <p class="paragraph-hero">Transformando ideias em soluções.</p>
+
           <!-- BOTÕES -->
           <div class="actions">
             <a href="#" class="btn  btn-primary">Download CV</a>
-            <a href="#about" class="btn btn-outline">Sobre mim</a>
+            <a href="#about" class="btn btn-outline" aria-label="about">Sobre mim</a>
           </div>
         </div>
 
         <div class="hero-image">
           <img
-            src="assets/img/perfil.1-removebg-preview.png"
-            alt="Foto de Vini"
-            class="profile-image"
+            src="assets/img/foto-de-perfil_1-removebg-preview.png"
+            alt="Foto de perfil de Marcos Vinicius, desenvolvedor front-end"
+            class="profile-image" loading="lazy"
           >
         </div>
       </div>
@@ -136,10 +137,10 @@
 
     <!--ABOUT-->
     <section id="about" class="section" >
-      <div class="container">
+      <div class="container container-about">
         
         <header class="section-header">
-          <span class="subtitle-section">Minhas Introdução</span>
+          <span class="subtitle-section">Minha Introdução</span>
           <h2 class="title-section">Sobre mim</h2>
         </header> 
 
@@ -147,31 +148,31 @@
         <div class="about-grid">
 
           <div class="about-image card">
-            <img src="assets/img/perfil.2.jpg" alt="Foto do desenvolvedor front-end">
+            <img src="assets/img/perfil.2.jpg" alt="Foto do desenvolvedor front-end" loading="lazy">
           </div>
 
           <div class="about-text">
             <p class="text">
-              Sou Desenvolvedor Front-End com foco na construção de interfaces responsivas e funcionais utilizando HTML, CSS e JavaScript.
+              Sou Desenvolvedor Frontend com foco na construção de interfaces responsivas e funcionais utilizando HTML, CSS e JavaScript.
               Tenho experiência prática em projetos individuais e colaborativos, participando ativamente de decisões técnicas e resolução de problemas.
               Destaco minha proatividade ao identificar desafios no desenvolvimento e propor soluções viáveis, sempre buscando evolução constante e boas práticas de código.
             </p>
           </div>
 
           <div class="about-actions">
-            <a href="#contact" class="btn btn-primary" >
+            <a href="#contact" class="btn btn-primary" aria-label="contact">
               contato
             </a>
 
             <div class="social-links">
-              <a href="https://www.linkedin.com/in/mvinicius-developer" target="_blank" class="icon-accent">
-                <i class="bx bxl-linkedin"></i>
+              <a href="https://www.linkedin.com/in/mvinicius-developer" target="_blank" rel="noopener noreferrer" class="icon-accent" aria-label="linkedin">
+                <i class="bx bxl-linkedin" aria-hidden="true"></i>
               </a>
-              <a href="https://github.com/vinioliveira-developer" target="_blank" class="icon-accent">
-                <i class="bx bxl-github"></i>
+              <a href="https://github.com/vinioliveira-developer" target="_blank" rel="noopener noreferrer" class="icon-accent" aria-label="github">
+                <i class="bx bxl-github" aria-hidden="true"></i>
               </a>
-              <a href="https://www.instagram.com/vinioliver16/" target="_blank" class="icon-accent">
-                <i class="bx bxl-instagram"></i>
+              <a href="https://www.instagram.com/vinioliver16/" target="_blank" rel="noopener noreferrer" class="icon-accent" aria-label="instagram">
+                <i class="bx bxl-instagram" aria-hidden="true"></i>
               </a>
             </div>
 
@@ -196,41 +197,41 @@
           <div class="skills-card">
             <h3>Habilidades Profissionais</h3>
             <ul>
-              <li><i class="bx bxs-badge-check"></i>HTML</li>
-              <li><i class="bx bxs-badge-check"></i>CSS</li>
-              <li><i class="bx bxs-badge-check"></i>JavaScript</li>
-              <li><i class="bx bxs-badge-check"></i>Git</li>
-              <li><i class="bx bxs-badge-check"></i>GitHub</li>
+              <li><i class="bx bxs-badge-check" aria-hidden="true"></i>HTML</li>
+              <li><i class="bx bxs-badge-check" aria-hidden="true"></i>CSS</li>
+              <li><i class="bx bxs-badge-check" aria-hidden="true"></i>JavaScript</li>
+              <li><i class="bx bxs-badge-check" aria-hidden="true"></i>Git</li>
+              <li><i class="bx bxs-badge-check" aria-hidden="true"></i>GitHub</li>
             </ul>
           </div>
 
           <div class="skills-card">
             <h3>Habilidades Pessoais</h3>
             <ul>
-              <li><i class="bx bxs-badge-check"></i>Comunicação</li>
-              <li><i class="bx bxs-badge-check"></i>Liderança</li>
-              <li><i class="bx bxs-badge-check"></i>Trabalho em equipe</li>
-              <li><i class="bx bxs-badge-check"></i>Flexibilidade</li>
-              <li><i class="bx bxs-badge-check"></i>Organização</li>
-              <li><i class="bx bxs-badge-check"></i>Resolução de problemas</li>
+              <li><i class="bx bxs-badge-check" aria-hidden="true"></i>Comunicação</li>
+              <li><i class="bx bxs-badge-check" aria-hidden="true"></i>Liderança</li>
+              <li><i class="bx bxs-badge-check" aria-hidden="true"></i>Trabalho em equipe</li>
+              <li><i class="bx bxs-badge-check" aria-hidden="true"></i>Flexibilidade</li>
+              <li><i class="bx bxs-badge-check" aria-hidden="true"></i>Organização</li>
+              <li><i class="bx bxs-badge-check" aria-hidden="true"></i>Resolução de problemas</li>
             </ul>
           </div>
 
           <div class="skills-card">
             <h3>Estudando atualmente</h3>
             <ul>
-              <li><i class="bx bxs-badge-check"></i>JavaScript moderno (ES6+)</li>
-              <li><i class="bx bxs-badge-check"></i>React</li>
-              <li><i class="bx bxs-badge-check"></i>Inglês técnico</li>
+              <li><i class="bx bxs-badge-check" aria-hidden="true"></i>JavaScript moderno (ES6+)</li>
+              <li><i class="bx bxs-badge-check" aria-hidden="true"></i>React</li>
+              <li><i class="bx bxs-badge-check" aria-hidden="true"></i>Inglês técnico</li>
             </ul>
           </div>
 
           <div class="skills-card">
             <h3>Design (complementar)</h3>
             <ul>
-              <li><i class="bx bxs-badge-check"></i>Figma</li>
-              <li><i class="bx bxs-badge-check"></i>Princípios de UX</li>
-              <li><i class="bx bxs-badge-check"></i>Prototipagem</li>
+              <li><i class="bx bxs-badge-check" aria-hidden="true"></i>Figma</li>
+              <li><i class="bx bxs-badge-check" aria-hidden="true"></i>Princípios de UX</li>
+              <li><i class="bx bxs-badge-check" aria-hidden="true"></i>Prototipagem</li>
             </ul>
           </div>
 
@@ -240,7 +241,6 @@
     </section>
 
     <!-- WORKS SECTION -->
-
     <section id="works" class="works section">
       <header class="section-header">
         <span class="subtitle-section">Meus Projetos</span>
@@ -248,13 +248,13 @@
       </header>
       
       <div class="works__filters">
-        <button class="works__item active-work"   data-filter="all">
+        <button class="works__item active-work"   data-filter="all" aria-label="all">
           Todos
         </button>
-        <button class="works__item" data-filter="web">
+        <button class="works__item" data-filter="web" aria-label="web">
           Web
         </button>
-        <button class="works__item" data-filter="mobile">
+        <button class="works__item" data-filter="mobile" aria-label="mobile">
           Mobile
         </button>
       </div>
@@ -262,23 +262,23 @@
       <div class="works__container container">
 
         <!-- PROJETO 1 -->
-        <div class="work__card mobile">
+        <div class="works__card mobile">
 
-          <img src="./assets/img/projetos/mobile-catalog.jpg" alt="Catálogo de Tintas" class="work__img">
+          <img src="./assets/img/projetos/mobile-catalog.webp" alt="Catálogo de Tintas" class="works__img" loading="lazy">
 
-          <h3 class="work__title">Catálogo de Tintas</h3>
+          <h3 class="works__title">Catálogo de Tintas</h3>
 
-          <p class="work__description">
-            Aplicação mobile para visualização de tintas com foco em experiência do usuário. Utizando HTML, CSS & JavaScript puro.
+          <p class="works__description">
+            Aplicação mobile para visualização de tintas com foco em experiência do usuário. Utilizando HTML, CSS & JavaScript puro.
           </p>
 
-          <div class="work__buttons">
+          <div class="works__buttons">
 
-            <a href="https://catalogo-de-tintas.vercel.app/" target="_self" class="work__button">
+            <a href="https://catalogo-de-tintas.vercel.app/" rel="noopener noreferrer" class="works__button" aria-label="catalogo de tintas">
               Ver Projeto
             </a>
 
-            <a href="https://github.com/vinioliveira-developer/catalogo-de-tintas" target="_self" class="work__button github">
+            <a href="https://github.com/vinioliveira-developer/catalogo-de-tintas" rel="noopener noreferrer" class="works__button github" aria-label="github">
               GitHub
             </a>
 
@@ -288,23 +288,23 @@
 
 
         <!-- PROJETO 2 -->
-        <div class="work__card web mobile">
+        <div class="works__card web mobile">
 
-          <img src="assets/img/projetos/web-mobile-potfolio.jpg" alt="Portfólio" class="work__img">
+          <img src="assets/img/projetos/web-mobile-potfolio.webp" alt="Portfólio" class="works__img" loading="lazy">
 
-          <h3 class="work__title">Portfólio Developer</h3>
+          <h3 class="works__title">Portfólio Developer</h3>
 
-          <p class="work__description">
+          <p class="works__description">
             Portfólio pessoal desenvolvido para apresentar projetos e habilidades. Utizando HTML, CSS & JavaScript puro.
           </p>
 
-          <div class="work__buttons">
+          <div class="works__buttons">
 
-            <a href="https://portfolio-eta-fawn-59.vercel.app/" target="_self" class="work__button">
+            <a href="https://portfolio-eta-fawn-59.vercel.app/" rel="noopener noreferrer" class="works__button" aria-label="portfolio">
               Ver Projeto
             </a>
 
-            <a href="https://github.com/vinioliveira-developer/portfolio" target="_self" class="work__button github">
+            <a href="https://github.com/vinioliveira-developer/portfolio" rel="noopener noreferrer" class="works__button github" aria-label="github">
               GitHub
             </a>
 
@@ -326,29 +326,29 @@
       <div class="contact-container container">
 
         <div class="contact-card">
-          <i class='bx bx-mail-send contact-icon'></i>
+          <i class='bx bx-mail-send contact-icon' aria-hidden="true"></i>
           <h3>Email</h3>
           <span>mvinicius.developer@gmail.com</span>
-          <a href="mailto:mvinicius.developer@gmail.com?subject=Contato%20do%20Portfólio&body=Olá%20Vinicius,%20vi%20seu%20portfólio" class="contact-button">
+          <a href="mailto:mvinicius.developer@gmail.com?subject=Contato%20do%20Portfólio&body=Olá%20Vinicius,%20vi%20seu%20portfólio" rel="noopener noreferrer" class="contact-button" aria-label="Email">
             Contato <i class='bx bx-right-arrow-alt'></i>
           </a>
         </div>
 
         <div class="contact-card">
-          <i class='bx bxl-whatsapp contact-icon'></i>
+          <i class='bx bxl-whatsapp contact-icon' aria-hidden="true"></i>
           <h3>Whatsapp</h3>
           <span>(11) 91945-4217</span>
-          <a href="https://wa.me/5511919454217" target="_blank" class="contact-button">
+          <a href="https://wa.me/5511919454217" target="_blank" rel="noopener noreferrer" class="contact-button" aria-label="WhatsApp">
             Contato <i class='bx bx-right-arrow-alt'></i>
           </a>
         </div>
 
         <div class="contact-card">
-          <i class='bx bxl-linkedin contact-icon'></i>
-          <h3>Linkedin</h3>
+          <i class='bx bxl-linkedin contact-icon' aria-hidden="true"></i>
+          <h3>LinkedIn</h3>
           <span>Marcos Vinicius</span>
-          <a href="https://www.linkedin.com/in/mvinicius-developer" target="_blank" class="contact-button">
-            Contato <i class='bx bx-right-arrow-alt'></i>
+          <a href="https://www.linkedin.com/in/mvinicius-developer" target="_blank" rel="noopener noreferrer" class="contact-button" aria-label="Linkedin">
+            Contato <i class='bx bx-right-arrow-alt' aria-hidden="true"></i>
           </a>
         </div>
 
@@ -356,6 +356,7 @@
     </section>
   </main>
 
+  <!-- FOOTER -->
   <footer class="footer">
     <span>&copy; <span id="year"></span> Marcos Vinicius Developer</span>
     <p class="footer-stack">

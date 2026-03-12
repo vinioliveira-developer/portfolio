@@ -94,7 +94,7 @@ navLinks.forEach(link => {
 /* ================= WORKS FILTER ================= */
 
 const filterButtons = document.querySelectorAll(".works__item")
-const workCards = document.querySelectorAll(".work__card")
+const workCards = document.querySelectorAll(".works__card")
 
 filterButtons.forEach(button => {
 
